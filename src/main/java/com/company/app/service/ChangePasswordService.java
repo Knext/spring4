@@ -1,5 +1,7 @@
 package com.company.app.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.company.app.dao.Member;
 import com.company.app.dao.MemberDao;
 import com.company.app.dao.exception.MemberNotFoundExeption;
@@ -8,6 +10,7 @@ public class ChangePasswordService {
 
 	private MemberDao memberDao;
 	
+	@Autowired
 	public ChangePasswordService(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}

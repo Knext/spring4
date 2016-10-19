@@ -21,5 +21,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/dev_spring/workspace/Spring4/external_lib/com.springsource.net.sf.cglib-2.1.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
