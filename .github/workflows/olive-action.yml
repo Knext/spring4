@@ -25,3 +25,6 @@ jobs:
         with:
           olive-token: ${{ secrets.OLIVE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          comment-on-pr: "true"
+          analyze-only: "true"
+
