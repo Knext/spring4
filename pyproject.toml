@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling>=1.0.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spam-eggs"
+version = "2020.0.0"
+description = "A sample Python project"
+authors = [
+    {name = "John Doe", email = "john@example.com"},
+    {name = "Jane Smith"}
+]
+maintainers = [
+    {name = "Maintainer", email = "maintainer@example.com"}
+]
+readme = "README.md"
+license-files = ["LICENSE"]
+keywords = ["sample", "test", "example"]
+requires-python = ">=3.8"
+dependencies = [
+    "httpx>=4.0.0",
+    "gidgethub[httpx]>4.0.0",
+    "django>2.1; os_name != 'nt'",
+    "django>2.0; os_name == 'nt'"
+]
+
+[project.optional-dependencies]
+gui = ["PyQt5>=5.15.0"]
+cli = [
+    "rich>=10.0.0",
+    "click>=8.0.0"
+]
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/example/spam.git"
+"Bug Tracker" = "https://github.com/example/spam/issues"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
